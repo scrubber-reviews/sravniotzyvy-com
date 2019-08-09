@@ -46,10 +46,8 @@ class SravniOtzyvyCom:
                 new_review.status = _StatusReview.positive
             else:
                 new_review.status = _StatusReview.negative
-            author = Author()
-            author.name = review_soup.parent \
+            new_review.author.name = review_soup.parent \
                 .select_one('span.reviewer').text
-            new_review.author = author
             yield new_review
 
     @staticmethod
@@ -65,6 +63,12 @@ class Rating:
     average_rating = None
     on_scale = 5.0
 
+    def get_dict(self):
+        return {
+            'average_rating': self.average_rating,
+            'on_scale': self.on_scale,
+        }
+
     def __repr__(self):
         return '<{} из {}>'.format(self.average_rating, self.on_scale)
 
@@ -75,6 +79,11 @@ class Author:
     def get_name(self):
         return self.name
 
+    def get_dict(self):
+        return {
+            'name': self.name
+        }
+
 
 class _StatusReview(Enum):
     negative = True
@@ -82,10 +91,21 @@ class _StatusReview(Enum):
 
 
 class Review:
-    text = ''
-    date = ''
-    author = None
-    status = None
+    def __init__(self):
+        self.text = ''
+        self.date = ''
+        self.author = Author()
+        self.status = None
+        self.rating = Rating()
+
+    def get_dict(self):
+        return {
+            'text': self.text,
+            'date': self.date,
+            'status': self.status,
+            'rating': self.rating.get_dict(),
+            'author': self.author.get_dict(),
+        }
 
     def __repr__(self):
         return '<{}: {} -> {}'.format(self.date,
@@ -95,4 +115,5 @@ class Review:
 if __name__ == '__main__':
     prov = SravniOtzyvyCom('1711-rosenergobank-otzyvy')
     prov.start()
-    print(prov.rating, prov.reviews)
+    for r in prov.reviews:
+        print(r.get_dict())
