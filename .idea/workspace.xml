@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3cf184ec-0a7e-43a7-a1a1-3bed9998f115" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sravniotzyvy_com/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sravniotzyvy_com/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sravniotzyvy_com/sravniotzyvy_com.py" beforeDir="false" afterPath="$PROJECT_DIR$/sravniotzyvy_com/sravniotzyvy_com.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,6 +78,8 @@
       <list>
         <item itemvalue="Makefile.release" />
         <item itemvalue="Makefile.dist" />
+        <item itemvalue="Makefile.release" />
+        <item itemvalue="Makefile.dist" />
         <item itemvalue="Python.sravniotzyvy_com" />
       </list>
     </recent_temporary>
@@ -90,7 +94,8 @@
       <workItem from="1565108949333" duration="1512000" />
       <workItem from="1565110470621" duration="786000" />
       <workItem from="1565275394731" duration="1100000" />
-      <workItem from="1565358979457" duration="434000" />
+      <workItem from="1565358979457" duration="495000" />
+      <workItem from="1565601837705" duration="241000" />
     </task>
     <servers />
   </component>
@@ -115,7 +120,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/sravniotzyvy_com/sravniotzyvy_com.py</url>
-          <line>117</line>
+          <line>119</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

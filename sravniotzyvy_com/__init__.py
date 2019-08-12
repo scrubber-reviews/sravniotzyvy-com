@@ -5,8 +5,9 @@ from .sravniotzyvy_com import SravniOtzyvyCom
 
 __author__ = """Melis Nurlan"""
 __email__ = 'melis.zhoroev+scrubber@gmail.com'
-__version__ = '0.1.0'
-__name__ = 'СравниОтзывы'
+__version__ = '0.1.2'
+__name__ = __title__ = 'СравниОтзывы'
+__slug_img_link__ = 'https://i.ibb.co/Yjf69bH/image.png'
 __description__ = 'СравниВыбери - Мы знаем где лучше! ' \
                   'Теперь Вы знаете куда идти, ' \
                   'прежде чем пользоваться услугами какой-либо компании. ' \
@@ -16,8 +17,8 @@ __description__ = 'СравниВыбери - Мы знаем где лучше!
                   ' чтобы другим было легче осуществить свой выбор'
 __how_get_slug__ = """
 Надо скопировать цифры с url как показано в скришоте
-<img src="https://i.ibb.co/Yjf69bH/image.png" alt="image" border="0">
-"""
+<img src="{}" alt="image" border="0">
+""".format(__slug_img_link__)
 
 
 provider = SravniOtzyvyCom

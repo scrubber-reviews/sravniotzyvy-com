@@ -61,16 +61,18 @@ class SravniOtzyvyCom:
 
 class Rating:
     average_rating = None
-    on_scale = 5.0
+    min_scale = 0.0
+    max_scale = 5.0
 
     def get_dict(self):
         return {
             'average_rating': self.average_rating,
-            'on_scale': self.on_scale,
+            'on_scale': self.min_scale,
+            'max_scale': self.max_scale,
         }
 
     def __repr__(self):
-        return '<{} из {}>'.format(self.average_rating, self.on_scale)
+        return '<{} из {}>'.format(self.average_rating, self.max_scale)
 
 
 class Author:
