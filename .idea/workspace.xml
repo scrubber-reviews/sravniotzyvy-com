@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3cf184ec-0a7e-43a7-a1a1-3bed9998f115" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sravniotzyvy_com/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sravniotzyvy_com/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sravniotzyvy_com/sravniotzyvy_com.py" beforeDir="false" afterPath="$PROJECT_DIR$/sravniotzyvy_com/sravniotzyvy_com.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,9 +75,9 @@
       <list>
         <item itemvalue="Makefile.release" />
         <item itemvalue="Makefile.dist" />
+        <item itemvalue="Python.sravniotzyvy_com" />
         <item itemvalue="Makefile.release" />
         <item itemvalue="Makefile.dist" />
-        <item itemvalue="Python.sravniotzyvy_com" />
       </list>
     </recent_temporary>
   </component>
@@ -95,8 +92,16 @@
       <workItem from="1565110470621" duration="786000" />
       <workItem from="1565275394731" duration="1100000" />
       <workItem from="1565358979457" duration="495000" />
-      <workItem from="1565601837705" duration="241000" />
+      <workItem from="1565601837705" duration="359000" />
     </task>
+    <task id="LOCAL-00001" summary="makefile: install: clean added argument --user">
+      <created>1565602170330</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565602170330</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,18 +120,11 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/sravniotzyvy_com/sravniotzyvy_com.py</url>
-          <line>119</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="makefile: install: clean added argument --user" />
+    <option name="LAST_COMMIT_MESSAGE" value="makefile: install: clean added argument --user" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/sravniotzyvy_com$sravniotzyvy_com.coverage" NAME="sravniotzyvy_com Coverage Results" MODIFIED="1565275405289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sravniotzyvy_com" />
+    <SUITE FILE_PATH="coverage/sravniotzyvy_com$sravniotzyvy_com.coverage" NAME="sravniotzyvy_com Coverage Results" MODIFIED="1565602089343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sravniotzyvy_com" />
   </component>
 </project>
