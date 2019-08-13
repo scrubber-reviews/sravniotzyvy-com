@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3cf184ec-0a7e-43a7-a1a1-3bed9998f115" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sravniotzyvy_com/sravniotzyvy_com.py" beforeDir="false" afterPath="$PROJECT_DIR$/sravniotzyvy_com/sravniotzyvy_com.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,9 +76,9 @@
       <list>
         <item itemvalue="Makefile.release" />
         <item itemvalue="Makefile.dist" />
-        <item itemvalue="Python.sravniotzyvy_com" />
         <item itemvalue="Makefile.release" />
         <item itemvalue="Makefile.dist" />
+        <item itemvalue="Python.sravniotzyvy_com" />
       </list>
     </recent_temporary>
   </component>
@@ -93,6 +94,8 @@
       <workItem from="1565275394731" duration="1100000" />
       <workItem from="1565358979457" duration="495000" />
       <workItem from="1565601837705" duration="359000" />
+      <workItem from="1565611896479" duration="55000" />
+      <workItem from="1565707301556" duration="1162000" />
     </task>
     <task id="LOCAL-00001" summary="makefile: install: clean added argument --user">
       <created>1565602170330</created>

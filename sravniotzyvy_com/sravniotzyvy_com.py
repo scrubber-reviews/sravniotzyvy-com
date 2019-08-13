@@ -10,13 +10,25 @@ from bs4 import BeautifulSoup
 from requests.structures import CaseInsensitiveDict
 
 
+class _Logger:
+    def send_info(self, message):
+        print('INFO: ' + message)
+
+    def send_warning(self, message):
+        print('WARNING: ' + message)
+
+    def send_error(self, message):
+        print('ERROR: ' + message)
+
+
 class SravniOtzyvyCom:
     rating = None
     BASE_URL = 'https://sravniotzyvy.com'
     reviews = []
 
-    def __init__(self, slug):
+    def __init__(self, slug, logger=_Logger):
         self.session = requests.Session()
+        self.logger = logger()
         self.slug = str(slug)
         self.rating = Rating()
         self.session.headers = CaseInsensitiveDict({
@@ -28,12 +40,17 @@ class SravniOtzyvyCom:
         })
 
     def start(self):
+        self.logger.send_info('scrubber is started')
         resp = self.session.get(urljoin(self.BASE_URL, self.slug) + '.html')
+        if not resp.status_code == 200:
+            self.logger.send_error(resp.text)
+            raise Exception(resp.text)
         resp.encoding = resp.apparent_encoding
         soup = BeautifulSoup(resp.text, 'html.parser')
         self.rating.average_rating = self._convert_string_to_float(
             soup.select_one('div.summ>p').text)
         self.reviews = list(self._collect_reviews(soup))
+        self.logger.send_info('scrubber is finished')
         return self
 
     def _collect_reviews(self, soup):
