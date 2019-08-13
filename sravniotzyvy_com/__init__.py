@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
 """Top-level package for sravniotzyvy."""
-from .sravniotzyvy_com import SravniOtzyvyCom, Rating
+from .sravniotzyvy_com import SravniOtzyvyCom, Rating, _StatusReview
 
 __author__ = """Melis Nurlan"""
 __email__ = 'melis.zhoroev+scrubber@gmail.com'
-__version__ = '0.1.4'
+__version__ = '0.1.5'
 __name__ = __title__ = 'СравниОтзывы'
 __slug_img_link__ = 'https://i.ibb.co/Yjf69bH/image.png'
 __description__ = 'СравниВыбери - Мы знаем где лучше! ' \
@@ -23,4 +23,4 @@ __how_get_slug__ = """
 
 provider = SravniOtzyvyCom
 rating = Rating
-
+status = _StatusReview
